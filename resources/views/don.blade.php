@@ -18,16 +18,17 @@
         </nav>
     </header>
     <!----Hero Section------>
-    <section id="hero" class=" h-screen flex items-center justify-center bg-bg_dark">
-        <div class="w-4/5 mx-auto flex items-center">
+    <section id="hero" class=" h-screen flex items-center justify-center bg-bg_dark px-4">
+        <div class="md:w-4/5 mx-auto flex items-center">
 
             <div class=" mx-auto flex flex-col justify-center items-center ">
 
-                <img src="{{ asset('images/main.jpg') }}" class="w-80 rounded-full border-8 border-dalo" alt="">
+                <img src="{{ asset('images/main.jpg') }}" class="w-72 md:w-80 rounded-full border-8 border-dalo"
+                    alt="">
 
 
-                <h2 class="text-4xl  font-light text-blue py-4">PATIENCE NUMBERCO</h2>
-                <p class="text-center w-96 text-dalo">I am a graphic designer and a full stack web developer
+                <h2 class="md:text-4xl text-3xl font-bold md:font-light text-blue py-4">PATIENCE NUMBERCO</h2>
+                <p class="text-center w-80 md:w-96 text-dalo">I am a graphic designer and a full stack web developer
                     specializing in
                     building
                     and designing
@@ -40,14 +41,14 @@
     </section>
 
     <!---About Me------>
-    <section id="Aboutme" class="w-4/5 mx-auto h-screen flex items-center justify-center">
-        <div class=" flex  justify-center ">
-            <div class="w-80 overflow-hidden rounded-md">
+    <section id="Aboutme" class="md:w-4/5 mx-auto md:h-screen flex items-center justify-center py-8 px-4">
+        <div class=" flex flex-wrap-reverse md:justify-center ">
+            <div class="md:w-80 w-70 overflow-hidden rounded-md">
                 <img src="{{ asset('images/second.jpg') }}" class="" alt="">
             </div>
-            <div class="pl-4 ml-4">
+            <div class="md:pl-4 md:ml-4">
                 <h2 class="text-3xl font-bold text-blue">About Me</h2>
-                <p class="w-96 text-dalo pt-2">
+                <p class="md:w-96 text-dalo pt-2">
                     I am currently a fourth year education computer science student at the university of
                     Malawi(Chancellor College). I love building things for the net. I am a team worker and i have good
                     communication skills and am good when it comes to presentations.
@@ -101,12 +102,13 @@
     </section>
 
     <!----Services---------->
-    <section id="services" class="h-screen flex items-center justify-center bg-bg_dark">
-        <div class="w-4/5 flex flex-col items-center justify-center">
+    <section id="services" class="md:h-screen flex items-center justify-center bg-bg_dark py-8 px-4">
+        <div class="md:w-4/5 flex flex-col items-center justify-center">
             <div>
-                <h2 class="text-blue text-5xl font-bold pb-8">Services I Provide For My Clients</h2>
+                <h2 class="text-blue text-center text-2xl md:text-5xl font-bold pb-8">Services I Provide For My Clients
+                </h2>
             </div>
-            <div class="flex space-x-8 pt-8 ">
+            <div class="flex flex-wrap md:space-x-8 space-y-8 pt-8 justify-center items-center ">
                 <!-----card---->
                 <div class="bg-bg_dark box w-72  h-96 rounded-3xl">
                     <div class="flex justify-center pt-10">
@@ -148,31 +150,74 @@
     </section>
 
     <!-------Sample Work------>
-    <section id="samplework" class="h-screen flex items-center justify-center">
+    <section id="samplework" class="md:h-screen flex items-center justify-center py-8 px-4">
         <div class="flex flex-col justify-center items-center">
-            <h4 class="text-blue text-5xl font-bold pb-8">Previous Work</h4>
+            <h4 class="text-blue text-2xl md:text-5xl font-bold pb-8">Previous Work</h4>
             <div>
-                <div class="flex space-x-8">
-                    <div class="w-96 h-96 box rounded-lg overflow-hidden relative">
+                <div class="flex md:space-x-8 md:space-y-0 space-y-8 flex-wrap items-center justify-center">
+                    <div class="w-80 md:w-96 md:h-96 h-80 box rounded-lg overflow-hidden relative">
                         <div class="absolute bottom-1.5  p-4 z-10 opacity-0">
-    
+
                             <p>Helo helo helo helo helo Helo helo helo helo helo Helo helo helo helo helo Helo helo helo
                                 helo helo Helo helo helo helo helo</p>
                         </div>
                         <img src="{{ asset('images/News and Events.jpg') }}" alt="">
                     </div>
-                    <div class="w-96 h-96 box rounded-lg overflow-hidden relative">
+                    <div class="w-80 md:w-96 md:h-96 h-80 box rounded-lg overflow-hidden relative">
                         <div class="absolute bottom-1.5  p-4 z-10 opacity-0">
-    
+
                             <p>Helo helo helo helo helo Helo helo helo helo helo Helo helo helo helo helo Helo helo helo
                                 helo helo Helo helo helo helo helo</p>
                         </div>
                         <img src="{{ asset('images/News and Events.jpg') }}" alt="">
                     </div>
                 </div>
-                
+
             </div>
         </div>
+    </section>
+
+    <!---Contact Me----->
+    <section id="contactme" class=" h-screen bg-bg_dark px-4 py-8 flex items-center ">
+        <div class=" w-4/5 mx-auto flex flex-col items-center">
+
+            <h5 class="text-blue font-medium">CONTACT ME</h5>
+            <h2 class="text-2xl md:text-5xl font-bold text-color_white">Get In Touch</h2>
+            <div class="w-full flex flex-wrap py-8">
+                <form class="md:w-4/6 grid grid-cols-2 gap-4 ">
+                    <input type="text" placeholder="name"
+                        class="w-full border rounded-md bg-bg_dark px-4 py-2 border-dalo text-dalo outline-0">
+                    <input type="text" placeholder="email"
+                        class="w-full border rounded-md bg-bg_dark px-4 py-2 border-dalo text-dalo outline-0">
+                    <input type="text" placeholder="subject/title"
+                        class=" md:col-span-2 w-full border rounded-md bg-bg_dark px-4 py-2 border-dalo text-dalo outline-0">
+                    <textarea type="text" placeholder="message"
+                        class="w-full md:col-span-2 h-56 border rounded-md bg-bg_dark px-4 py-2 border-dalo text-dalo outline-0"></textarea>
+
+                </form>
+                <div class="pl-8 space-y-4">
+                    <div class="flex items-center space-x-2 ">
+                        <div class="h-12 w-12 rounded-full bg-blue flex items-center justify-center">
+                            <ion-icon name="call-outline" class="font-bold text-3xl text-bg_dark"></ion-icon>
+                        </div>
+                        <p class="text-dalo">088 17 44 989 <br> 098 533 58 65</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="h-12 w-12 rounded-full bg-blue flex items-center justify-center">
+                            <ion-icon name="mail-outline" class="font-bold text-3xl text-bg_dark"></ion-icon>
+                        </div>
+                        <p class="text-dalo">clemolpatie@gmail.com</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="h-12 w-12 rounded-full bg-blue flex items-center justify-center">
+                            <ion-icon name="location-outline" class="font-bold text-3xl text-bg_dark"></ion-icon>
+                        </div>
+                        <p class="text-dalo">Ekwendeni, Mzuzu, Malawi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 
