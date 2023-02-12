@@ -220,6 +220,35 @@
 
     </section>
 
+    <!-----footer------>
+    <footer class="h-96 flex flex-col items-center justify-center relative"
+        style="background-image: url('{{ asset('images/footer.png') }}')">
+        <img src="{{asset('images/Logo/Don2.svg')}}" class="w-20 pb-8" alt="">
+        <div class="w-2/5 flex flex-col items-center justify-center space-y-8">
+            <p class="text-dalo text-center">I am always available for work, i am currently working with no organization and am in my final year at
+                the University of Malawi. Send me an email and let’s talk about building a beautiful web experience.</p>
+                <div class="flex space-x-4">
+                    <div class="w-8 h-8 bg-blue rounded-sm flex items-center justify-center">
+                        <ion-icon name="logo-facebook" class="text-bg_dark text-2xl"></ion-icon>
+                    </div>
+                    <div class="w-8 h-8 bg-blue rounded-sm flex items-center justify-center">
+                        <ion-icon name="logo-whatsapp" class="text-bg_dark text-2xl"></ion-icon>
+                    </div>
+                    <div class="w-8 h-8 bg-blue rounded-sm flex items-center justify-center">
+                        <ion-icon name="logo-linkedin" class="text-bg_dark text-2xl"></ion-icon>
+                    </div>
+                    <div class="w-8 h-8 bg-blue rounded-sm flex items-center justify-center">
+                        <ion-icon name="logo-github" class="text-bg_dark text-2xl"></ion-icon>
+                    </div>
+                </div>
+        </div>
+
+        <div class="flex justfy-center absolute bottom-4">
+            <p class="text-dalo">All Rights Reserved</p>
+        </div>
+
+    </footer>
+
 
     <!---Ionic icons Link---->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
