@@ -193,7 +193,9 @@
                         class=" md:col-span-2 w-full border rounded-md bg-bg_dark px-4 py-2 border-dalo text-dalo outline-0">
                     <textarea type="text" placeholder="message"
                         class="w-full md:col-span-2 h-56 border rounded-md bg-bg_dark px-4 py-2 border-dalo text-dalo outline-0"></textarea>
-
+                    <div>
+                        <button class="text-color_white px-8 py-2 bg-blue rounded-md">SEND</button>
+                    </div>
                 </form>
                 <div class="pl-8 space-y-4">
                     <div class="flex items-center space-x-2 ">
