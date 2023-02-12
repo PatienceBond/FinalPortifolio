@@ -147,6 +147,34 @@
 
     </section>
 
+    <!-------Sample Work------>
+    <section id="samplework" class="h-screen flex items-center justify-center">
+        <div class="flex flex-col justify-center items-center">
+            <h4 class="text-blue text-5xl font-bold pb-8">Previous Work</h4>
+            <div>
+                <div class="flex space-x-8">
+                    <div class="w-96 h-96 box rounded-lg overflow-hidden relative">
+                        <div class="absolute bottom-1.5  p-4 z-10 opacity-0">
+    
+                            <p>Helo helo helo helo helo Helo helo helo helo helo Helo helo helo helo helo Helo helo helo
+                                helo helo Helo helo helo helo helo</p>
+                        </div>
+                        <img src="{{ asset('images/News and Events.jpg') }}" alt="">
+                    </div>
+                    <div class="w-96 h-96 box rounded-lg overflow-hidden relative">
+                        <div class="absolute bottom-1.5  p-4 z-10 opacity-0">
+    
+                            <p>Helo helo helo helo helo Helo helo helo helo helo Helo helo helo helo helo Helo helo helo
+                                helo helo Helo helo helo helo helo</p>
+                        </div>
+                        <img src="{{ asset('images/News and Events.jpg') }}" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
 
     <!---Ionic icons Link---->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
